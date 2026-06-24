@@ -107,13 +107,13 @@ export default function Home() {
                 <span className="text-xs font-bold px-2.5 py-1 rounded-full bg-rose-100 text-rose-700">
                   Final Test
                 </span>
-                <span className="text-xs text-gray-400">~30 min</span>
+                <span className="text-xs text-gray-400">~60 min</span>
               </div>
               <h2 className="text-lg font-bold text-gray-900 group-hover:text-gray-700">
                 Certification Test
               </h2>
               <p className="text-sm font-medium text-rose-600 mb-2">
-                12 questions · Pass with 75% (9/12 correct)
+                32 questions · Pass with 75% (24/32 correct)
               </p>
               <p className="text-sm text-gray-500">
                 Complete all 5 days before taking this test. Pass to receive your
