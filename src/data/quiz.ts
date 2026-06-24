@@ -47,16 +47,16 @@ export const questions: Question[] = [
     category: "company",
     categoryLabel: "Ecoplanet",
     question:
-      "📌 TODO — Company-specific question: [Insert an Ecoplanet-specific question here, e.g. about the product, the mission, or a key company fact that Walid must know.]",
+      "What type of software is ecoplanet building, and what makes it different from existing energy tools?",
     options: [
-      "TODO: Option A",
-      "TODO: Option B (correct)",
-      "TODO: Option C",
-      "TODO: Option D",
+      "A sustainability reporting platform that helps companies track and disclose their Scope 1, 2 and 3 emissions to regulators",
+      "Energy integration software that connects energy markets directly to core business processes, enabling daily intelligent optimisation",
+      "An ERP module for SMBs to manage procurement, invoicing and supply chain operations in one system",
+      "A smart meter installation service combined with energy consulting for medium-sized companies",
     ],
     correctIndex: 1,
     explanation:
-      "TODO: Explain why Option B is correct. Replace this entire question with a real Ecoplanet-specific question before Walid takes the test.",
+      "Ecoplanet builds energy integration software — a new software category. It connects energy markets directly to a company's core operations (consumption, production, supply) and runs continuously, so companies consume energy when it's cheapest and greenest. This is fundamentally different from reporting tools, consulting, or ERP modules.",
   },
 
   // ── VALUE ENGINEERING (4 questions) ─────────────────────────────────────────
