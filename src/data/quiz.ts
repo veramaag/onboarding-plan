@@ -131,48 +131,48 @@ export const questions: Question[] = [
     category: "procurement",
     categoryLabel: "Procurement",
     question:
-      "What is the correct sequence of the 7-stage procurement lifecycle?",
+      "Which procurement strategy does ecoplanet use for its customers, and why?",
     options: [
-      "Sourcing → Specification → Need → Market Research → Negotiation → Contract Mgmt → SRM",
-      "Need → Market Research → Specification → Sourcing → Negotiation → Contract Mgmt → SRM",
-      "Need → Specification → Market Research → Sourcing → Negotiation → Contract Mgmt → SRM",
-      "Specification → Need → Sourcing → Market Research → Negotiation → SRM → Contract Mgmt",
+      "Festpreisbeschaffung — maximum cost certainty for the customer, regardless of market movement",
+      "Spotmarktbeschaffung — historically the cheapest option, so we recommend it for all customers",
+      "Strukturierte Beschaffung — combines multiple instruments over time to balance cost optimisation and risk management",
+      "We use all three equally and let the customer choose without a recommendation",
     ],
     correctIndex: 2,
     explanation:
-      "Need → Specification → Market Research → Sourcing → Negotiation → Contract Management → SRM. Specification must come before market research so you know what you're benchmarking.",
+      "ecoplanet always uses structured procurement (Strukturierte Beschaffung). It combines tranches, spot exposure, PPAs, and PV to smooth price risk across time and avoid dependence on a single market moment. Pure Festpreis has no upside; pure Spot was catastrophic in 2022/23.",
   },
   {
     id: 9,
     category: "procurement",
     categoryLabel: "Procurement",
     question:
-      "You need to procure a complex software platform for which there is no single right solution. Multiple factors matter: technical approach, implementation team, integration capability, and price. Which sourcing document should you use?",
+      "In ecoplanet's operative energy procurement, what is the correct sequence for a Fullservice customer when a Kaufsignal is triggered?",
     options: [
-      "RFQ (Request for Quotation) — to compare pricing across vendors",
-      "PO (Purchase Order) — to move quickly once you identify the right vendor",
-      "RFP (Request for Proposal) — to evaluate multiple factors with a weighted scorecard",
-      "LOI (Letter of Intent) — to signal interest before committing",
+      "Call the Handelstelefon → receive Fixierungsbestätigung → enter prices in Retool → email the customer directly",
+      "Collect the 11:30 signal email → call Handelstelefon before 14:00 → confirm price → enter prices in Retool before 17:00",
+      "Send the customer the buying signal → wait for their confirmation → enter in Retool the next morning",
+      "Forward the signal to the utility by email → await their offer → approve by phone the following day",
     ],
-    correctIndex: 2,
+    correctIndex: 1,
     explanation:
-      "An RFP is the right choice when requirements are complex, solutions are not standardized, and you need to evaluate multiple factors beyond price. Use a weighted scorecard to compare proposals fairly.",
+      "Fullservice process: 11:30 Kaufsignal email arrives → (N-Ergie: forward Tranchenübersicht) → call Handelstelefon before 14:00 → confirm price verbally → receive Fixierungsbestätigung → enter in Retool before 17:00 → auto-email to CSM. Timing is strict — missing 14:00 or 17:00 means the trade doesn't happen.",
   },
   {
     id: 10,
     category: "procurement",
     categoryLabel: "Procurement",
     question:
-      "Which contract type gives the buyer the most cost certainty, and who bears the cost risk if the project runs over budget?",
+      "A new customer has 7 GWh/year electricity consumption and a mediocre credit rating. Which utility partner is most appropriate, and why?",
     options: [
-      "Time & Materials — cost risk sits with the buyer",
-      "Cost-Plus — cost risk sits with the buyer",
-      "Fixed-Price — cost risk sits with the supplier",
-      "Framework Agreement — cost risk is shared equally",
+      "N-Ergie — they have the most experience with all customer types and always accept new customers",
+      "SachsenEnergie — best for mid-sized customers, flexible on credit and tranche size",
+      "enercity — credit check via Creditreform (Crefo) is more flexible than N-Ergie/SachsenEnergie; good fit for the 7 GWh volume range",
+      "Uniper — they specialise in medium-sized customers under 10 GWh",
     ],
     correctIndex: 2,
     explanation:
-      "In a fixed-price contract the price is agreed upfront and cannot change — the supplier bears the risk of cost overruns. This gives the buyer maximum cost certainty, which is why fixed-price is preferred for well-defined scope.",
+      "enercity is the right choice here. N-Ergie has a strict credit check (via Allianz Trade) and mediocre credit would likely be rejected. SachsenEnergie has a high minimum tranche size and strict credit too. enercity uses Creditreform (Crefo) which is more flexible, and 7 GWh is within their range. Uniper requires 10+ GWh.",
   },
 
   // ── STAKEHOLDERS & COMMUNICATION (2 questions) ───────────────────────────────
