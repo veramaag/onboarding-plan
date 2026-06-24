@@ -15,54 +15,54 @@ export const TOTAL_QUESTIONS = 32;
 
 export const questions: Question[] = [
 
-  // ── ECOPLANET & COMPANY (6 questions) ────────────────────────────────────────
+  // ── ECOPLANET & COMPANY (8 questions) ────────────────────────────────────────
 
   {
     id: 1,
     category: "company",
     categoryLabel: "Ecoplanet",
-    question: "Which regulatory frameworks are the primary demand drivers for ecoplanet's target market?",
+    question: "ecoplanet calls itself 'energy integration software' — a new category. What does this mean in practice?",
     options: [
-      "GDPR and the Digital Markets Act, which require companies to disclose energy consumption data to regulators annually",
-      "CSRD and the German Supply Chain Due Diligence Act (LkSG), which mandate emissions reporting and supplier sustainability assessments",
-      "Basel III and the Solvency II Directive, which create energy risk disclosure requirements for energy-intensive industrial companies",
-      "ISO 50001 and ISO 14001, which are mandatory certifications for all German manufacturing companies above 100 employees",
+      "It consolidates energy billing data from multiple utilities into one dashboard and generates monthly cost reports for finance teams",
+      "It connects energy market signals directly to operational decisions, continuously optimising consumption, procurement, and costs based on live market data",
+      "It automates ISO 50001 audit documentation by capturing meter readings and linking them to energy policy targets for certification bodies",
+      "It acts as an energy broker, negotiating bulk contracts with utilities on behalf of a pool of manufacturing companies to reduce unit costs",
     ],
     correctIndex: 1,
     explanation:
-      "CSRD requires large companies to report Scope 3 emissions; LkSG requires supply chain sustainability assessment. Both create direct regulatory demand for structured energy and procurement solutions.",
+      "Energy integration software means the platform connects energy markets to core business processes and runs continuously — making daily, market-responsive decisions. This is distinct from reporting tools, audit software, or brokerage services.",
   },
 
   {
     id: 2,
     category: "company",
     categoryLabel: "Ecoplanet",
-    question: "Approximately what share of a typical company's total carbon footprint comes from its supply chain (Scope 3 emissions)?",
+    question: "ecoplanet was built to fill a specific market gap. Which gap does it address?",
     options: [
-      "10–20%, since direct operations and energy use dominate most companies' emission profiles",
-      "30–40%, split roughly equally between production processes, logistics, and transport",
-      "50–60%, reflecting the combined impact of purchased goods, logistics, and end-of-life product disposal",
-      "70–90%, which is why sustainable procurement is so strategically important for decarbonisation",
+      "The absence of a digital platform for utilities to manage their pool of B2B industrial customers in a single interface",
+      "The lack of standardised ISO 50001 audit software that works across all German manufacturing sub-sectors",
+      "The difficulty for mid-market manufacturers to find certified energy consultants willing to work on project-based pricing",
+      "The gap between static annual energy procurement strategies and volatile energy markets that create daily optimisation opportunities",
     ],
     correctIndex: 3,
     explanation:
-      "Scope 3 (supply chain) emissions account for 70–90% of most companies' carbon footprint — making sustainable procurement a top-priority lever for corporate decarbonisation.",
+      "ecoplanet was built because most companies buy energy once a year (static) while markets move daily. Energy integration software bridges that gap — connecting live market conditions to operational decisions, rather than locking customers into an annual fixed strategy.",
   },
 
   {
     id: 3,
     category: "company",
     categoryLabel: "Ecoplanet",
-    question: "What type of software is ecoplanet building, and what makes it fundamentally different from existing energy tools?",
+    question: "Why can't existing energy management tools (basic EMS software, Excel, consultants) solve the same problem as ecoplanet?",
     options: [
-      "A sustainability reporting platform that consolidates Scope 1, 2 and 3 data for regulatory disclosure, optimised for mid-market manufacturers",
-      "An ERP module for energy-intensive SMBs that integrates procurement, invoicing and consumption tracking in one system",
-      "Energy integration software — a new category that connects energy markets directly to core business processes, enabling daily intelligent optimisation",
-      "A smart metering and energy audit service combining IoT hardware with consulting for companies with ISO 50001 obligations",
+      "They require ISO 27001 certification to connect to industrial SCADA systems, which most software providers cannot obtain",
+      "They are limited to electricity and cannot handle the combined optimisation of electricity, gas, and heat in one integrated system",
+      "They focus on historical reporting and static annual strategies — ecoplanet operates continuously, making market-responsive decisions in real time",
+      "They only work for large industrial customers above 50 GWh, leaving the entire mid-market segment without suitable software options",
     ],
     correctIndex: 2,
     explanation:
-      "Ecoplanet builds energy integration software — a new software category. It connects energy markets directly to a company's operations and runs continuously, enabling daily optimisation. This is distinct from reporting tools, consulting, or ERP modules.",
+      "Traditional tools report on what happened (historical data, annual reviews). ecoplanet operates in real time — monitoring markets, surfacing anomalies, and enabling procurement decisions continuously. The difference is static vs. dynamic, reactive vs. proactive.",
   },
 
   {
@@ -85,7 +85,7 @@ export const questions: Question[] = [
     id: 5,
     category: "company",
     categoryLabel: "Ecoplanet",
-    question: "The German Energy Efficiency Act (EnEfG) is currently under revision. What threshold is proposed as the new mandatory level for implementing a certified Energy Management System (ISO 50001 or EMAS)?",
+    question: "The German Energy Efficiency Act (EnEfG) is currently under revision. What threshold is proposed as the new mandatory level for implementing a certified Energy Management System?",
     options: [
       "2 GWh/year — lowered from the previous threshold to capture a broader range of industrial energy users",
       "5 GWh/year — aligned with ecoplanet's ICP entry criterion to create a clear regulatory overlap",
@@ -94,7 +94,7 @@ export const questions: Question[] = [
     ],
     correctIndex: 3,
     explanation:
-      "The EnEfG revision proposes raising the mandatory EMS threshold from 7.5 GWh to 23.6 GWh (the EU EED minimum). The goal is to reduce bureaucratic burden. The decision is still moving through the legislative process.",
+      "The EnEfG revision proposes raising the mandatory EMS threshold from 7.5 GWh to 23.6 GWh (the EU EED minimum). Goal: reduce bureaucratic burden. The decision is still moving through the legislative process as of mid-2026.",
   },
 
   {
@@ -110,20 +110,52 @@ export const questions: Question[] = [
     ],
     correctIndex: 1,
     explanation:
-      "Because ecoplanet is not a licensed energy supplier, it partners with utilities (N-Ergie, enercity, etc.) who supply the energy. ecoplanet manages the strategy, analysis and trade execution on the customer's behalf, earning through the partnership arrangement.",
+      "Because ecoplanet is not a licensed energy supplier, it partners with utilities (N-Ergie, enercity, etc.) who supply the energy. ecoplanet manages strategy, analysis, and trade execution on the customer's behalf, earning through the partnership arrangement.",
   },
-
-  // ── GTM & PRODUCT (10 questions) ─────────────────────────────────────────────
 
   {
     id: 7,
+    category: "company",
+    categoryLabel: "Ecoplanet",
+    question: "What specifically does ecoplanet's product give a Part-time Energy Manager that manual processes cannot?",
+    options: [
+      "Continuous monitoring and automated alerts that remove the need for daily manual data collection — the platform runs autonomously and flags issues before they escalate",
+      "A compliance-certified audit trail that automatically satisfies ISO 50006 documentation requirements without any manual input from the energy manager",
+      "A direct connection to the customer's utility account manager, who proactively notifies the energy manager whenever a better tariff becomes available",
+      "A built-in procurement algorithm that automatically executes energy trades at pre-set price thresholds without requiring human confirmation for each trade",
+    ],
+    correctIndex: 0,
+    explanation:
+      "The Part-time Energy Manager's core pain is manual data work — copying meter readings, building reports, catching issues after the fact. ecoplanet removes that by running 24/7, alerting automatically, and making compliance-ready data available without manual effort.",
+  },
+
+  {
+    id: 8,
+    category: "company",
+    categoryLabel: "Ecoplanet",
+    question: "Which ecoplanet product module is most directly relevant to Walid's day-to-day role as Value Engineer Procurement?",
+    options: [
+      "The anomaly detection module, which surfaces consumption irregularities that the energy manager investigates and reports to production teams",
+      "The ISO 50006 reporting module, which generates energy baseline documentation for certification audits automatically",
+      "The Energy Procurement module — handling structured procurement strategies, Lastganganalyse, and Terminmarktbeschaffung for customers",
+      "The sustainability dashboard, which tracks Scope 2 emissions and links them to the customer's decarbonisation targets",
+    ],
+    correctIndex: 2,
+    explanation:
+      "Walid's role is Value Engineer Procurement — his core work is the Energy Procurement module: analysing customer load profiles (Lastganganalyse), building Tranchenpläne, executing Terminmarktbeschaffung, and managing partner utility relationships.",
+  },
+
+  // ── GTM & PRODUCT (8 questions) ──────────────────────────────────────────────
+
+  {
+    id: 9,
     category: "gtm",
     categoryLabel: "GTM & Product",
     question: "Which of the following best describes ecoplanet's Ideal Customer Profile (ICP)?",
     options: [
       "German retail and logistics companies with 1,000+ employees, a dedicated sustainability team, and active EU ETS participation",
       "Any European industrial company with annual energy costs over €1M, regardless of volume, company size, or location",
-      "German manufacturing companies with 5+ GWh/year consumption, 50–500 employees, ISO 50001 certified or in progress, with no adequate EMS",
+      "German manufacturing companies with 5+ GWh/year consumption, 50–500 employees, ISO 50001 certified or in progress, with no adequate EMS in place",
       "German SMBs with installed solar or wind assets seeking to optimise self-consumption and sell surplus energy back to the grid",
     ],
     correctIndex: 2,
@@ -132,23 +164,23 @@ export const questions: Question[] = [
   },
 
   {
-    id: 8,
+    id: 10,
     category: "gtm",
     categoryLabel: "GTM & Product",
     question: "What is the key difference between a Part-Time and a Full-Time Energy Manager as ecoplanet Champion profiles?",
     options: [
-      "Part-time managers are overwhelmed by manual data work and fear compliance failures; full-time managers have a plateaued savings program and struggle to prove ROI to leadership — requiring a different pitch for each",
+      "Part-time managers are overwhelmed by manual data work and fear compliance failures; full-time managers have plateaued savings and struggle to prove ROI to leadership — requiring a different pitch for each",
       "Part-time managers only exist at companies under 100 employees; full-time managers are exclusively found at companies with 500+ employees and long-standing ISO 50001 certification",
       "Part-time managers are harder to win because they lack authority to approve software budgets; full-time managers have direct budget approval and can close deals without further sign-off",
       "The distinction is no longer relevant — most companies now have a hybrid role combining energy compliance and procurement, regardless of time allocation",
     ],
     correctIndex: 0,
     explanation:
-      "The key difference is pain and fear: Part-time managers drown in manual data consolidation and fear audit failures. Full-time managers have deep expertise but hit a plateau — they need insights that manual analysis misses. Both are valid Champions but require completely different conversations.",
+      "The key difference is core pain: Part-time managers drown in manual data work and fear audit failures. Full-time managers have deep expertise but hit a savings plateau and need insights manual analysis can't surface. Both are Champions but require completely different conversations.",
   },
 
   {
-    id: 9,
+    id: 11,
     category: "gtm",
     categoryLabel: "GTM & Product",
     question: "What is the correct sequence of ecoplanet's 6 pre-sales stages?",
@@ -160,11 +192,11 @@ export const questions: Question[] = [
     ],
     correctIndex: 1,
     explanation:
-      "The correct order is Lead / Outreach → Discovery → Demo → Solution Evaluation → Offer Sent → Closing. Discovery always precedes Demo — running a demo without confirmed pain and urgency is wasted effort and advances nothing.",
+      "Lead / Outreach → Discovery → Demo → Solution Evaluation → Offer Sent → Closing. Discovery always precedes Demo — running a demo without confirmed pain and urgency is wasted effort and advances nothing.",
   },
 
   {
-    id: 10,
+    id: 12,
     category: "gtm",
     categoryLabel: "GTM & Product",
     question: "What does 'U' stand for in the CUSTOM framework, and what is its role in the Discovery stage?",
@@ -176,27 +208,11 @@ export const questions: Question[] = [
     ],
     correctIndex: 3,
     explanation:
-      "U = Urgency & Solution Fit. It answers two questions: Is there real urgency (compelling event, cost of inaction)? And can ecoplanet actually solve this customer's specific pain? Both must be true before investing in a Demo.",
+      "U = Urgency & Solution Fit: Is there real urgency (compelling event, cost of inaction)? And can ecoplanet actually solve this customer's specific pain? Both must be true before investing in a Demo.",
   },
 
   {
-    id: 11,
-    category: "gtm",
-    categoryLabel: "GTM & Product",
-    question: "What are the two primary decision triggers that create urgency in ecoplanet's target customers?",
-    options: [
-      "A new procurement director joining and issuing an RFP, combined with a peer company publicly announcing energy management investment",
-      "Completion of a large PV installation changing the energy balance, combined with pressure from the works council on sustainability reporting",
-      "An upcoming ISO audit or unexpected energy bill spike, combined with management scrutiny on rising energy spend",
-      "Expiry of a fixed-price energy contract creating a procurement window, combined with BAFA subsidy availability in the current budget year",
-    ],
-    correctIndex: 2,
-    explanation:
-      "The primary triggers are: ISO audit pressure (compliance fear) and an unexpected energy bill spike or CFO/management scrutiny on costs. These create real urgency — without a trigger like this, there is rarely a compelling reason to act now.",
-  },
-
-  {
-    id: 12,
+    id: 13,
     category: "gtm",
     categoryLabel: "GTM & Product",
     question: "Which of the following is a hard disqualification criterion — a prospect that should NOT enter the sales pipeline?",
@@ -212,22 +228,6 @@ export const questions: Question[] = [
   },
 
   {
-    id: 13,
-    category: "gtm",
-    categoryLabel: "GTM & Product",
-    question: "At which sales stage is the 3× ROI guarantee first introduced to the customer?",
-    options: [
-      "Discovery — it is part of the initial qualification pitch to establish credibility and justify the customer's time investment",
-      "Demo — it is presented during the demo to anchor value expectation before the Champion reports internally",
-      "Offer Sent — it appears in the commercial offer as a contractual commitment linked to pricing terms",
-      "Solution Evaluation — it is used to validate the business case with decision-makers and secure organisational buy-in beyond the Champion",
-    ],
-    correctIndex: 3,
-    explanation:
-      "The 3× ROI guarantee is introduced at Solution Evaluation, where the goal is to convince decision-makers (beyond the Champion) that the investment is justified. It is a key commercial tool at that stage, not used earlier.",
-  },
-
-  {
     id: 14,
     category: "gtm",
     categoryLabel: "GTM & Product",
@@ -240,7 +240,7 @@ export const questions: Question[] = [
     ],
     correctIndex: 1,
     explanation:
-      "Demo goal: validate that ecoplanet solves the Champion's specific pain, and secure their buy-in. Only then does it make sense to expand the conversation to the buying center and decision-makers in Solution Evaluation.",
+      "Demo goal: validate that ecoplanet solves the Champion's specific pain and secure their buy-in. Only then does it make sense to expand the conversation to the buying center and decision-makers in Solution Evaluation.",
   },
 
   {
@@ -249,14 +249,14 @@ export const questions: Question[] = [
     categoryLabel: "GTM & Product",
     question: "What does 'M' stand for in CUSTOM, and when does it typically become the focus?",
     options: [
-      "Mutual Action Plan — the agreed path to a decision with clear next steps from both sides; becomes critical in later stages to prevent deals from stalling after initial interest",
       "Market Positioning — establishing how ecoplanet compares to alternatives being evaluated; addressed in Discovery to neutralise competition early",
       "Management Alignment — confirming senior leadership supports the initiative; typically resolved at Solution Evaluation before the offer is sent",
       "Measurable Outcomes — quantifying the exact savings amount expected by the customer, locked in during Discovery to set expectations before the Demo",
+      "Mutual Action Plan — the agreed path to a decision with clear next steps from both sides; becomes critical in later stages to prevent deals from stalling",
     ],
-    correctIndex: 0,
+    correctIndex: 3,
     explanation:
-      "M = Mutual Action Plan. It defines the agreed path to a decision: what happens next, who does what, and by when. Without it, deals stall after demos and solution evaluation meetings. It becomes critical in the later stages of the process.",
+      "M = Mutual Action Plan: the agreed path to a decision — who does what and by when. Without it, deals stall after demos and solution evaluation meetings. It accumulates across calls and becomes especially critical in the later stages of the process.",
   },
 
   {
@@ -284,7 +284,7 @@ export const questions: Question[] = [
     question: "Which procurement strategy does ecoplanet use for its customers, and what is the core rationale?",
     options: [
       "Festpreisbeschaffung — cost certainty is the primary concern of manufacturing customers and simplifies internal budgeting",
-      "Spotmarktbeschaffung — the Day-Ahead market is historically cheapest and ecoplanet's software can shift customer load to low-price periods",
+      "Spotmarktbeschaffung — the Day-Ahead market is historically cheapest and ecoplanet's software can shift load to low-price periods",
       "Equal weighting of all three strategies, chosen based on the customer's current utility contract terms and renewal date",
       "Strukturierte Beschaffung — combines multiple instruments across time horizons to smooth price risk, more robust than pure fixed or pure spot in volatile markets",
     ],
@@ -299,14 +299,14 @@ export const questions: Question[] = [
     categoryLabel: "Procurement",
     question: "In the German electricity spot market, what mechanism determines the price at any given moment?",
     options: [
-      "The merit order — generators offer capacity from cheapest to most expensive, and the price is set by the most expensive generator needed to cover demand at that moment",
-      "A bilateral auction between the 10 largest utilities and industrial consumers, where the clearing price is the volume-weighted average of all accepted bids",
+      "The merit order — generators offer capacity from cheapest to most expensive, and the price is set by the most expensive generator needed to cover demand",
+      "A bilateral auction between the 10 largest utilities and industrial consumers, where the clearing price is the volume-weighted average of all bids",
       "A regulatory price cap set by the Bundesnetzagentur based on the rolling 90-day average wholesale price, adjusted quarterly",
       "Direct negotiation between large industrial consumers and renewable generators, published as an average of all concluded bilateral contracts",
     ],
     correctIndex: 0,
     explanation:
-      "The merit order sets the price: generators offer capacity in order of cost (cheapest first), and the price is set by the most expensive generator needed to balance supply and demand. This is why gas plants — expensive to run — often set the price, and why gas prices indirectly affect electricity costs.",
+      "The merit order sets the price: generators offer capacity in order of cost (cheapest first), and the price is set by the most expensive generator needed to balance supply and demand. Gas plants often sit at the margin — which is why gas prices indirectly affect electricity costs.",
   },
 
   {
@@ -315,14 +315,14 @@ export const questions: Question[] = [
     categoryLabel: "Procurement",
     question: "What structural change was introduced to the German Day-Ahead electricity market in October 2025, and what is its key consequence?",
     options: [
-      "Germany introduced a carbon price floor of €45/MWh for gas-fired power plants, raising the minimum electricity price and reducing market volatility",
+      "Germany introduced a carbon price floor of €45/MWh for gas-fired plants, raising the minimum electricity price and reducing market volatility",
       "The EPEX SPOT exchange merged with Nord Pool, creating a unified European Day-Ahead market with standardised prices across all member states",
-      "Trading switched from hourly to 15-minute intervals, making prices more granular and volatile — allowing consumption and generation profiles to be matched with greater precision",
-      "Large industrial consumers gained direct access to the wholesale market, bypassing utilities entirely and removing the Versorgeraufschlag from their energy bills",
+      "Trading switched from hourly to 15-minute intervals, making prices more granular and volatile — consumption and generation can now be matched with greater precision",
+      "Large industrial consumers gained direct wholesale market access, bypassing utilities entirely and removing the Versorgeraufschlag from their bills",
     ],
     correctIndex: 2,
     explanation:
-      "In October 2025, the German Day-Ahead market switched from hourly to 15-minute trading intervals (EPEX SPOT reform). This makes prices more transparent and precise, but also more volatile — both a risk and an opportunity for customers on spot-exposed contracts.",
+      "October 2025: German Day-Ahead switched from hourly to 15-minute trading intervals (EPEX SPOT reform). Prices are more transparent and precise, but also more volatile — both a risk and an opportunity for customers on spot-exposed contracts.",
   },
 
   {
@@ -331,7 +331,7 @@ export const questions: Question[] = [
     categoryLabel: "Procurement",
     question: "What are the four building blocks of ecoplanet's structured procurement approach?",
     options: [
-      "Festpreis, Spot, Hedge-Fonds-Produkte, and Eigenerzeugung — covering fixed, variable, financial, and self-generation exposure respectively",
+      "Festpreis, Spot, Hedge-Fonds-Produkte, and Eigenerzeugung — covering fixed, variable, financial, and self-generation exposure",
       "Tranche (Terminmarkt), Spotmodell, Power Purchase Agreement (PPA), and Eigenerzeugung (PV) — each targeting a different time horizon and risk profile",
       "Day-Ahead, Intraday, Terminmarkt, and Balancing — the four electricity market timeframes combined in each customer portfolio",
       "Base Load, Peak Load, Off-Peak Load, and Flexibility Premium — the four standard exchange product categories used in portfolio construction",
@@ -347,14 +347,14 @@ export const questions: Question[] = [
     categoryLabel: "Procurement",
     question: "A customer's energy contract has a tight volume tolerance band. What is the pricing implication, and why?",
     options: [
-      "A tighter band results in a lower price — the utility can hedge the volume with more standardised exchange products, reducing their internal hedging cost",
-      "Tolerance bands have no direct effect on the upfront price — they only affect the financial settlement process after delivery has occurred",
+      "A tighter band results in a lower price — the utility can hedge the volume with more standardised exchange products, reducing internal hedging cost",
+      "Tolerance bands have no direct effect on upfront price — they only affect the financial settlement process after delivery has occurred",
       "A tighter band results in a lower price — less risk is transferred to the portfolio and the utility's imbalance settlement cost decreases proportionally",
-      "A tighter band results in a higher price — the utility must hedge the volume more precisely, and prices the additional deviation risk into the Versorgeraufschlag",
+      "A tighter band results in a higher price — the utility must hedge the volume more precisely, pricing the additional deviation risk into the Versorgeraufschlag",
     ],
     correctIndex: 3,
     explanation:
-      "Tighter tolerance = higher price. The utility must commit to a precise volume and hedge it accordingly — the cost of managing deviation from the forecast volume is priced into the Versorgeraufschlag. Wider bands give the utility more flexibility, which they pass on as a lower price.",
+      "Tighter tolerance = higher price. The utility commits to a precise volume and must hedge it accordingly — the cost of managing deviation from the forecast is priced into the Versorgeraufschlag. Wider bands give the utility more flexibility, passed on as a lower price.",
   },
 
   {
@@ -370,7 +370,7 @@ export const questions: Question[] = [
     ],
     correctIndex: 2,
     explanation:
-      "Netzkosten (grid costs) are set by the local grid operator and regulated by the BNetzA. They are a mandatory pass-through — neither ecoplanet nor the utility can negotiate or reduce them. They must be included in any total cost of ownership analysis.",
+      "Netzkosten are set by the local grid operator and regulated by the BNetzA. They are a mandatory pass-through — neither ecoplanet nor the utility can negotiate or reduce them. They must be included in any total cost of ownership analysis.",
   },
 
   {
@@ -379,14 +379,14 @@ export const questions: Question[] = [
     categoryLabel: "Procurement",
     question: "The German Industriestrompreis planned for 2026 targets a specific effective electricity price for eligible companies. What is the target, and what is a key condition?",
     options: [
-      "~5 ct/kWh as EU lower bound, capped at 50% of annual consumption — it cannot push prices below 50 €/MWh, and reinvestment into decarbonisation measures is required",
+      "~5 ct/kWh as EU lower bound, capped at 50% of annual consumption — cannot push prices below 50 €/MWh, and reinvestment into decarbonisation measures is required",
       "~3 ct/kWh covering 100% of consumption, conditional on ISO 50001 certification and a public commitment to carbon neutrality by 2035",
-      "~7 ct/kWh covering up to 80% of consumption, applied automatically to all companies above 5 GWh without requiring an application",
+      "~7 ct/kWh covering up to 80% of consumption, applied automatically to all companies above 5 GWh without requiring a formal application",
       "~10 ct/kWh maximum price guarantee for 60% of consumption, funded through increased grid fees charged to residential customers",
     ],
     correctIndex: 0,
     explanation:
-      "Target: ~5 ct/kWh (EU floor). Key conditions: capped at 50% of annual consumption, cannot reduce price below 50 €/MWh, and subsidy requires reinvestment into decarbonisation (PPAs, efficiency, storage). Abwicklung is ex-post — companies must pre-finance and claim later.",
+      "Target: ~5 ct/kWh (EU floor). Key conditions: capped at 50% of annual consumption, cannot reduce price below 50 €/MWh, and requires reinvestment into decarbonisation (PPAs, efficiency, storage). Abwicklung is ex-post — companies must pre-finance and claim later.",
   },
 
   {
@@ -413,12 +413,12 @@ export const questions: Question[] = [
     options: [
       "A cold outreach campaign by the SDR team targeting manufacturing companies with expiring fixed-price contracts, run quarterly",
       "A referral from an existing customer who recommends the procurement module to a peer in their industry network",
-      "Customer Success identifying an existing customer whose consumption data is already in the product — triggered by contract renewal, data availability, or proactive customer inquiry",
-      "An automated platform alert when a customer's energy spend exceeds a threshold, routed directly to the procurement team",
+      "Customer Success identifying an existing customer whose consumption data is already in the product — triggered by contract renewal, data availability, or customer inquiry",
+      "An automated platform alert when a customer's energy spend exceeds a threshold, routed directly to the procurement team queue",
     ],
     correctIndex: 2,
     explanation:
-      "The procurement module is primarily a CS-driven Upsell — not cold outbound. CS identifies the opportunity at existing customers: upcoming contract renewal, available Lastgang data, or a customer proactively asking for help with procurement. Walid supports with the analysis.",
+      "The procurement module is primarily a CS-driven Upsell — not cold outbound. CS identifies the opportunity at existing customers: upcoming contract renewal, available Lastgang data, or a proactive customer inquiry. Walid supports with analysis.",
   },
 
   {
@@ -434,7 +434,7 @@ export const questions: Question[] = [
     ],
     correctIndex: 0,
     explanation:
-      "Lastganganalyse derives: annual GWh (utility eligibility), peak load in MW (tranche sizing), base vs. variable split (Terminmarkt vs. spot allocation), and PPA suitability (renewable energy fit). These four outputs determine the entire procurement strategy.",
+      "Lastganganalyse derives: annual GWh (utility eligibility), peak load in MW (tranche sizing), base vs. variable split (Terminmarkt vs. spot allocation), and PPA suitability. These four outputs determine the entire procurement strategy.",
   },
 
   {
@@ -450,7 +450,7 @@ export const questions: Question[] = [
     ],
     correctIndex: 3,
     explanation:
-      "The core logic: by splitting the volume into tranches bought at different times, the customer achieves a weighted average price across multiple market moments. This eliminates the risk of one badly-timed fixation determining the entire annual energy cost.",
+      "Core logic: by splitting the volume into tranches bought at different times, the customer achieves a weighted average price across multiple market moments. This eliminates the risk of one badly-timed fixation determining the entire annual energy cost.",
   },
 
   {
@@ -466,7 +466,7 @@ export const questions: Question[] = [
     ],
     correctIndex: 1,
     explanation:
-      "Fullservice sequence: collect the 11:30 signal email → (N-Ergie only: forward Tranchenübersicht) → call Handelstelefon before 14:00 → confirm price verbally → receive Fixierungsbestätigung → enter in Retool before 17:00 → auto-email goes to CSM to forward to customer.",
+      "Fullservice sequence: collect the 11:30 signal email → (N-Ergie only: forward Tranchenübersicht) → call Handelstelefon before 14:00 → confirm price verbally → receive Fixierungsbestätigung → enter in Retool before 17:00 → auto-email to CSM to forward to customer.",
   },
 
   {
@@ -475,14 +475,14 @@ export const questions: Question[] = [
     categoryLabel: "Procurement",
     question: "When calling a utility's Handelstelefon to execute a Fullservice energy trade, what information must be provided?",
     options: [
-      "Company name and customer ID, followed by the annual volume in MWh and the desired maximum price — the trader then offers a binding quote valid for 60 minutes",
-      "The Tranchenübersicht reference number, product type, and volume in MWh — the utility confirms automatically if the price is within the day's fixing range",
-      "The energy type (Strom/Gas), the product (e.g., 'Jahresprodukt 2027'), and the volume in MW — the utility quotes a price which is checked against the market and confirmed or declined",
-      "The customer's account number, the CSM's name as authorisation, and the specific 15-minute delivery periods to hedge with a maximum acceptable price per MWh",
+      "Company name and customer ID, followed by annual volume in MWh and desired maximum price — the trader offers a binding quote valid for 60 minutes",
+      "The Tranchenübersicht reference number, product type, and volume in MWh — the utility confirms automatically if price is within the day's fixing range",
+      "The energy type (Strom/Gas), the product (e.g. 'Jahresprodukt 2027'), and the volume in MW — the utility quotes a price which is checked and confirmed or declined",
+      "The customer's account number and the CSM's name as authorisation, followed by specific 15-minute delivery periods and a maximum acceptable price per MWh",
     ],
     correctIndex: 2,
     explanation:
-      "Call sequence: state the energy type (Strom/Gas) + product name (e.g., 'Jahresprodukt 2027') + volume in MW (not MWh). Utility quotes a price → check against current market → confirm. They repeat the price. Optionally ask them to confirm the MWh volume too.",
+      "Call sequence: energy type (Strom/Gas) + product name (e.g. 'Jahresprodukt 2027') + volume in MW (not MWh). Utility quotes a price → check against current market → confirm. They repeat the price. Optionally ask them to confirm the MWh volume too.",
   },
 
   {
@@ -494,11 +494,11 @@ export const questions: Question[] = [
       "The Kaufsignal is automatically re-triggered the next trading day and the process repeats until the customer confirms or formally opts out",
       "The CSM escalates to the contract manager; if no response within 5 business days the tranche is cancelled and the customer moves to advisory-only status",
       "The trade is executed by ecoplanet on the customer's behalf, transitioning them to Fullservice for that tranche without a contract amendment",
-      "No second signal is sent — the tranche is closed; to re-trigger the buying signal, the entire tranche must be deleted from the product and recreated",
+      "No second signal is sent — the tranche is closed; to re-trigger the buying signal, the entire tranche must be deleted and recreated in the product",
     ],
     correctIndex: 3,
     explanation:
-      "After one reminder: no further signal is sent and the tranche is closed. If the customer later wants to buy, the full tranche must be deleted and recreated in the product from scratch to generate a new Kaufsignal. There is no automatic retry.",
+      "After one reminder: no further signal is sent and the tranche is closed. If the customer later wants to buy, the full tranche must be deleted and recreated from scratch to generate a new Kaufsignal. There is no automatic retry.",
   },
 
   {
@@ -525,11 +525,11 @@ export const questions: Question[] = [
     options: [
       "Decline the prospect — ecoplanet's partner network cannot accommodate customers with below-average credit in the 5–10 GWh range",
       "Approach enercity — their credit assessment via Creditreform (Crefo) is significantly more flexible, and 9 GWh fits within their target range for electricity customers",
-      "Approach Stadtwerke Herne first — they offer the best conditions for mid-sized customers with non-standard credit and have a structured pool model similar to N-Ergie",
-      "Approach Flexpower — they specialise in mid-market electricity customers with credit challenges and can structure supply around a PPA volume",
+      "Approach Stadtwerke Herne first — they offer the best conditions for mid-sized customers with non-standard credit and a structured pool model similar to N-Ergie",
+      "Approach Flexpower — they specialise in mid-market electricity customers with credit challenges and structure supply around a PPA volume",
     ],
     correctIndex: 1,
     explanation:
-      "enercity is the right fallback here. N-Ergie and SachsenEnergie both use strict credit processes (Allianz Trade / own insurance). enercity uses Creditreform (Crefo), which is more flexible. 9 GWh is within their target range for electricity. Stadtwerke Herne is the last resort (operationally weak). Flexpower handles PPAs only.",
+      "enercity is the right fallback. N-Ergie and SachsenEnergie both use strict credit processes. enercity uses Creditreform (Crefo), which is more flexible. 9 GWh is within their electricity range. Stadtwerke Herne is the last resort (operationally weak). Flexpower handles PPAs only.",
   },
 ];
