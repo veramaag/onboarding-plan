@@ -77,9 +77,9 @@ export default function TestPage() {
 
           <div className="grid sm:grid-cols-3 gap-4 mb-6">
             {[
-              { icon: "❓", label: "12 questions", sub: "Multiple choice" },
-              { icon: "✅", label: "75% to pass", sub: "9 out of 12 correct" },
-              { icon: "⏱", label: "~30 minutes", sub: "No time limit" },
+              { icon: "❓", label: `${TOTAL_QUESTIONS} questions`, sub: "Multiple choice" },
+              { icon: "✅", label: "75% to pass", sub: `${PASS_SCORE} out of ${TOTAL_QUESTIONS} correct` },
+              { icon: "⏱", label: "~60 minutes", sub: "No time limit" },
             ].map((item) => (
               <div key={item.label} className="p-4 bg-rose-50 rounded-xl text-center">
                 <div className="text-2xl mb-1">{item.icon}</div>
@@ -92,7 +92,7 @@ export default function TestPage() {
           <div className="p-4 bg-gray-50 rounded-xl text-sm text-gray-600 mb-6">
             <p className="font-semibold text-gray-800 mb-2">What to expect:</p>
             <ul className="space-y-1">
-              <li>→ Questions cover all 4 topics: Ecoplanet, Value Engineering, Procurement, and Stakeholders</li>
+              <li>→ Questions cover all 3 topics: Ecoplanet, GTM & Product, and Procurement (Markets + Operations)</li>
               <li>→ After submission you&apos;ll see your score and the correct answer for each question</li>
               <li>→ If you don&apos;t pass, review the relevant day&apos;s content and retake</li>
             </ul>
