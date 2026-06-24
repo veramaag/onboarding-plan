@@ -560,8 +560,8 @@ export const days: DayData[] = [
       {
         id: "test-instructions",
         title: "Test Instructions",
-        body: `The onboarding certification test consists of 12 multiple-choice questions covering all 4 topic areas from this week.\n\nPassing score: 75% (9 out of 12 correct answers)\n\nAfter submission, you'll see:\n• Your total score\n• Whether you passed or need to retry\n• The correct answer for each question with a brief explanation\n\nTips:\n• Review your day recap sections above before starting\n• Take your time — there's no timer\n• Read each question carefully; some options are deliberately similar\n• You can retake the test if you don't pass on the first attempt\n\nGood luck! 🎓`,
-        highlight: "You must achieve 75% (9/12) to complete your onboarding. If you don't pass, review the relevant day's content and retake the test.",
+        body: `The onboarding certification test consists of 32 multiple-choice questions covering all four topic areas from this week.\n\nPassing score: 75% (24 out of 32 correct answers)\n\nAfter submission, you'll see:\n• Your total score\n• Whether you passed or need to retry\n• The correct answer for each question with a brief explanation\n\nTips:\n• Review the day recap sections above before starting\n• Take your time — there's no timer\n• Read each question carefully; some options are deliberately similar in wording\n• You can retake the test if you don't pass on the first attempt\n\nGood luck!`,
+        highlight: "You must achieve 75% (24/32) to complete your onboarding. If you don't pass, review the relevant day's content and retake the test.",
       },
     ],
     resources: [],

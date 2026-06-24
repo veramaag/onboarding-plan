@@ -9,7 +9,6 @@ const CATEGORY_LABELS: Record<Category, string> = {
   company: "Ecoplanet",
   gtm: "GTM & Product",
   procurement: "Procurement",
-  stakeholders: "Stakeholders",
 };
 
 type Phase = "intro" | "quiz" | "results";
