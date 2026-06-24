@@ -7,7 +7,7 @@ import type { Category } from "@/data/quiz";
 
 const CATEGORY_LABELS: Record<Category, string> = {
   company: "Ecoplanet",
-  ve: "Value Engineering",
+  gtm: "GTM & Product",
   procurement: "Procurement",
   stakeholders: "Stakeholders",
 };

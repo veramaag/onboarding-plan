@@ -1,4 +1,4 @@
-export type Category = "company" | "ve" | "procurement" | "stakeholders";
+export type Category = "company" | "gtm" | "procurement" | "stakeholders";
 
 export interface Question {
   id: number;
@@ -59,69 +59,70 @@ export const questions: Question[] = [
       "Ecoplanet builds energy integration software — a new software category. It connects energy markets directly to a company's core operations (consumption, production, supply) and runs continuously, so companies consume energy when it's cheapest and greenest. This is fundamentally different from reporting tools, consulting, or ERP modules.",
   },
 
-  // ── VALUE ENGINEERING (4 questions) ─────────────────────────────────────────
+  // ── GTM & PRODUCT (4 questions) ─────────────────────────────────────────────
   {
     id: 4,
-    category: "ve",
-    categoryLabel: "Value Engineering",
+    category: "gtm",
+    categoryLabel: "GTM & Product",
     question:
-      "What is the correct sequence of the five phases in the Value Engineering Job Plan?",
+      "Which of the following best describes ecoplanet's Ideal Customer Profile (ICP)?",
     options: [
-      "Creativity → Information → Function Analysis → Evaluation → Development",
-      "Information → Function Analysis → Creativity → Evaluation → Development",
-      "Function Analysis → Information → Creativity → Development → Evaluation",
-      "Information → Creativity → Function Analysis → Evaluation → Development",
+      "German retail and logistics companies with 1,000+ employees and a dedicated sustainability team",
+      "German manufacturing companies with 5+ GWh/year energy consumption, 50–500 employees, and ISO 50001 certified or in progress",
+      "Any European industrial company spending over €1M/year on energy without an ERP system",
+      "German SMBs with solar installations looking to optimise their energy mix",
     ],
     correctIndex: 1,
     explanation:
-      "The VE Job Plan always follows: Information → Function Analysis → Creativity → Evaluation → Development. Skipping or reordering phases undermines the methodology.",
+      "ICP: German manufacturing, 5+ GWh/year, 50–500 employees (mid-market), ISO 50001 certified or in progress. These are the ~15,000 companies in Germany that fit our target market.",
   },
   {
     id: 5,
-    category: "ve",
-    categoryLabel: "Value Engineering",
-    question: "In Value Engineering, how is 'Value' formally defined?",
+    category: "gtm",
+    categoryLabel: "GTM & Product",
+    question:
+      "What is the key difference between a Part-Time Energy Manager and a Full-Time Energy Manager as ecoplanet Champion profiles?",
     options: [
-      "Value = Cost × Quality",
-      "Value = Benefit − Cost",
-      "Value = Function / Cost",
-      "Value = Performance × Reliability",
+      "Part-time managers work at smaller companies; full-time managers only exist at companies with 500+ employees",
+      "Part-time managers are drowning in manual data work and fear compliance failures; full-time managers have plateaued savings and struggle to prove ROI to leadership",
+      "Part-time managers need ISO 50001 guidance; full-time managers are mainly interested in cost savings",
+      "There is no meaningful difference — both Champion profiles have the same core pain",
     ],
-    correctIndex: 2,
+    correctIndex: 1,
     explanation:
-      "Value = Function / Cost. To improve value you either increase the function delivered, decrease the cost, or both. This equation keeps the focus on function — not just cost-cutting.",
+      "Part-time Energy Managers spend 5–20 hours/month on energy as a secondary role and are overwhelmed by manual data consolidation. Full-time Energy Managers have deep energy expertise but have hit a savings plateau and struggle to surface new insights and prove ROI to leadership. The pitch is different for each.",
   },
   {
     id: 6,
-    category: "ve",
-    categoryLabel: "Value Engineering",
+    category: "gtm",
+    categoryLabel: "GTM & Product",
     question:
-      "What does FAST stand for in Value Engineering, and what is its purpose?",
+      "What is the correct sequence of the 6 pre-sales stages in ecoplanet's sales process?",
     options: [
-      "Financial Analysis and Supplier Tracking — used to compare supplier costs",
-      "Function Analysis System Technique — used to organize functions hierarchically and identify improvement opportunities",
-      "Focused Assessment of Specification Targets — used to review technical specs",
-      "Framework for Advanced Sourcing Technology — used to run digital RFP processes",
+      "Discovery → Lead → Demo → Offer Sent → Solution Evaluation → Closing",
+      "Lead / Outreach → Demo → Discovery → Solution Evaluation → Offer Sent → Closing",
+      "Lead / Outreach → Discovery → Demo → Solution Evaluation → Offer Sent → Closing",
+      "Discovery → Demo → Lead / Outreach → Offer Sent → Solution Evaluation → Closing",
     ],
-    correctIndex: 1,
+    correctIndex: 2,
     explanation:
-      "FAST = Function Analysis System Technique. A FAST diagram organizes all functions using HOW? → WHY? logic, making it easy to identify which functions are over-specified or unnecessary.",
+      "The correct sequence is: Lead / Outreach → Discovery → Demo → Solution Evaluation → Offer Sent → Closing. Discovery always comes before Demo — a demo without a confirmed pain and urgency is wasted effort.",
   },
   {
     id: 7,
-    category: "ve",
-    categoryLabel: "Value Engineering",
+    category: "gtm",
+    categoryLabel: "GTM & Product",
     question:
-      "Which of the following is the correct way to write a function in Value Engineering?",
+      "What does the 'U' stand for in ecoplanet's CUSTOM discovery framework, and why is it the most critical element?",
     options: [
-      '"High quality component"',
-      '"Transmit force"',
-      '"Be durable and reliable"',
-      '"Optimal performance under load"',
+      "Unique Value — quantifying what makes ecoplanet superior to alternatives",
+      "Urgency & Solution Fit — confirming real urgency and that ecoplanet can actually solve the pain; a deal without this should not advance to Demo",
+      "User Adoption — ensuring the Champion has the authority to drive internal rollout",
+      "Upsell Potential — identifying additional product modules the customer may need later",
     ],
     correctIndex: 1,
     explanation:
-      '"Transmit force" uses the correct Active Verb + Measurable Noun format. The other options describe attributes or outcomes, not functions. Functions must be expressed as verb-noun pairs.',
+      "U = Urgency & Solution Fit. It confirms two things: (1) there is real urgency — the customer has a pressing reason to act now, and (2) ecoplanet is the right solution for their specific pain. A deal where U is unconfirmed should never advance to Demo — it wastes everyone's time.",
   },
 
   // ── PROCUREMENT (3 questions) ────────────────────────────────────────────────
